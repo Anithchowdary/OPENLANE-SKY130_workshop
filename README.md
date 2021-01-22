@@ -10,7 +10,7 @@
 * [DAY 5](#day5)
 
 
-## DAY 1:
+## DAY 1
   Inception of open-source EDA, OpenLANE and Sky130 PDK
 ### 1.Introduction to RISC-V SOC
   * MACROS
