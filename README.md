@@ -3,11 +3,11 @@
 ## ![Screenshot (65)](https://user-images.githubusercontent.com/64426746/105518682-94a19c80-5cfe-11eb-9325-9c638ffb3f53.png)
 
 ## Table of contents
-* [DAY 1](#day 1)
-* [DAY 2](#day 2)
-* [DAY 3](#day 3)
-* [DAY 4](#day 4)
-* [DAY 5](#day 5)
+* [DAY 1](#day1)
+* [DAY 2](#day2)
+* [DAY 3](#day3)
+* [DAY 4](#day4)
+* [DAY 5](#day5)
 
 
 ## DAY 1
