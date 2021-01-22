@@ -13,6 +13,7 @@
 ## DAY 1
   Inception of open-source EDA, OpenLANE and Sky130 PDK
 ### 1.Introduction to RISC-V SOC
+    The chip is centered in the middle of the package,it consists of PADS & DIE.
   * MACROS
   * FOUNDARY IP's
   
