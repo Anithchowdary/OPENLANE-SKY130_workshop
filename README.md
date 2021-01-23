@@ -1,6 +1,8 @@
 # OPENLANE-SKY130_workshop
 ## workshop on openlane/sky130
 ## ![Screenshot (65)](https://user-images.githubusercontent.com/64426746/105518682-94a19c80-5cfe-11eb-9325-9c638ffb3f53.png)
+<img src="https://user-images.githubusercontent.com/64426746/105518682-94a19c80-5cfe-11eb-9325-9c638ffb3f53.png" alt="drawing" width="200"/>
+
 
 ## Table of contents
 * [WORKSHOP DAY 1](#day1)
