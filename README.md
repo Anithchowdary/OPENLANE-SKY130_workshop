@@ -163,5 +163,29 @@ Characterization flow consists of these steps:
 7.Provide necessary simulation commands
 
 ## WORKSHOP DAY 3 Design Library Cell
+#### Magic Layout View of Inverter Standard Cell
+Refer to: https://github.com/nickson-jose/vsdstdcelldesign for cell files.
+![Screenshot (77)](https://user-images.githubusercontent.com/64426746/106026901-5df9c680-60f0-11eb-9c2e-de0d5deec3be.png)
+#### invoke Magic
+![Screenshot (79)](https://user-images.githubusercontent.com/64426746/106027222-b29d4180-60f0-11eb-8ed5-c5a51e80fc56.png)
+LAYOUT MAGIC
+![Screenshot (81)](https://user-images.githubusercontent.com/64426746/106027084-8f729200-60f0-11eb-87e7-57dbd470fe74.png)
+### Magic Key Features
+1.Color Palette - Defines layers and associated colors Continuous DRC
+2.Device Inference - Automatic recognition of NMOS and PMOS devices
+### PEX Extraction with Magic
+![Screenshot (83)](https://user-images.githubusercontent.com/64426746/106027772-3b1be200-60f1-11eb-9e81-5450736decca.png)
+### ngspice stimulation
+![Screenshot (89)](https://user-images.githubusercontent.com/64426746/106027948-5f77be80-60f1-11eb-8783-2a2246938d93.png)
+#### output
+![Screenshot (90)](https://user-images.githubusercontent.com/64426746/106028256-baa9b100-60f1-11eb-99d2-6b3bcd5f3174.png)
+#### plotting the output vs time while sweeping the input:
+![Screenshot (91)](https://user-images.githubusercontent.com/64426746/106028428-ee84d680-60f1-11eb-98d3-10ec15b399e2.png)
+
+## WORKSHOP DAY 4 Layout Timing Analysis and CTS
+
+
+
+
 
 
