@@ -1,6 +1,6 @@
 # OPENLANE-SKY130_workshop
 ## workshop on openlane/sky130
-     ## ![Screenshot (65)](https://user-images.githubusercontent.com/64426746/105518682-94a19c80-5cfe-11eb-9325-9c638ffb3f53.png)
+## ![Screenshot (65)](https://user-images.githubusercontent.com/64426746/105518682-94a19c80-5cfe-11eb-9325-9c638ffb3f53.png)
 
 
 ## Table of contents
@@ -14,7 +14,7 @@
 ## WORKSHOP DAY 1
      Inception of open-source EDA, OpenLANE and Sky130 PDK
 ### Architecture of a chip
-      chip is centered in the package.package and chip are connected by wires so that they can send the signals in and out.the packages has PADS:these pads are used to send signals in and out of the chip.the size of the package is given the size of the die.A core consists of foundary IP's and macros
+ chip is centered in the package.package and chip are connected by wires so that they can send the signals in and out.the packages has PADS:these pads are used to send signals in and out of the chip.the size of the package is given the size of the die.A core consists of foundary IP's and macros
    
   * MACROS(all the digital blocks are called macros)  eg:Socs,SP1
   * FOUNDARY IP's(they are manufactured in the foundary,it is a place where manufacturing is done)  eg: PLL,adc0,ac1,dac,SRAM
@@ -25,19 +25,19 @@
 
 
 ### steps involved in Physical design flow(RTL TO GDS)
-      we design the circuit by writing the hardware description language and we do RTL synthesis such that we get the circuit netlist.the we use PDK's which are process design kits which are used in between the foundary and the designers. it is the collectionof data which are used to model a fabrication process for the EDA tools used to design.they contain designs rules:DRC,LVSetc..,Device models,Digital standard cell libraries and input output libraries.
+   we design the circuit by writing the hardware description language and we do RTL synthesis such that we get the circuit netlist.the we use PDK's which are process design kits which are used in between the foundary and the designers. it is the collectionof data which are used to model a fabrication process for the EDA tools used to design.they contain designs rules:DRC,LVSetc..,Device models,Digital standard cell libraries and input output libraries.
 ######  The flow from RTL to GSD is called pnr flow or physical design flow 
 #### 1.Synthesis:
-      we design the ciricuts by using HDL.the designed rtl is converted into circuits made up of different components from the standard cell library.the resultant circuit is in the HDL as gate level netlist.these standard cells have regular layouts which has fixed height rectangle and width is in the integer multiple of units.
+   we design the ciricuts by using HDL.the designed rtl is converted into circuits made up of different components from the standard cell library.the resultant circuit is in the HDL as gate level netlist.these standard cells have regular layouts which has fixed height rectangle and width is in the integer multiple of units.
  
 #### 2.FLOOR&POWER PLANNING:
-     The aim is to design the silicon area and create a robust power distribution network (PDN) to power each of the synthesized netlist's individual components. Additionally, to ensure a legalized GDS file, macro placement and blockages must be identified before placement occurs. We generate the ring that is linked to the pads in power planning, which carries power around the chip's edges. We also have power straps that use higher metal layers to carry power to the middle of the chip, minimizing IR fall and the issue of electro-migration.
+   The aim is to design the silicon area and create a robust power distribution network (PDN) to power each of the synthesized netlist's individual components. Additionally, to ensure a legalized GDS file, macro placement and blockages must be identified before placement occurs. We generate the ring that is linked to the pads in power planning, which carries power around the chip's edges. We also have power straps that use higher metal layers to carry power to the middle of the chip, minimizing IR fall and the issue of electro-migration.
 
 #### 3.Placement:
-     Spot the standard cells on the floorplane lines, lined up with destinations characterized in the innovation lef file. Position is done in two stages: Global and Detailed. In Global situation attempts to discover ideal situation for all cells yet they might be covering and not adjusted to columns, itemized arrangement takes the worldwide position and authorizes the entirety of the arrangements attempting to cling to what the worldwide situation needs.
+   Spot the standard cells on the floorplane lines, lined up with destinations characterized in the innovation lef file. Position is done in two stages: Global and Detailed. In Global situation attempts to discover ideal situation for all cells yet they might be covering and not adjusted to columns, itemized arrangement takes the worldwide position and authorizes the entirety of the arrangements attempting to cling to what the worldwide situation needs.
 
 #### 4.CTS(CLOCK TREE SYNTHESIS):
-      Clock tree synthesis is utilized to make the clock circulation network that is utilized to convey the clock to every consecutive component. The principle objective is to make an organization with insignificant slant across the chip. H-trees are a typical organization geography that is utilized to accomplish this objective.
+   Clock tree synthesis is utilized to make the clock circulation network that is utilized to convey the clock to every consecutive component. The principle objective is to make an organization with insignificant slant across the chip. H-trees are a typical organization geography that is utilized to accomplish this objective.
 
 #### 5.ROUTING:
 implements the interconnect framework between standard cells utilizing the leftover accessible metal layers after CTS and PDN age. The steering is performed on directing matrices to guarantee negligible DRC mistakes.
