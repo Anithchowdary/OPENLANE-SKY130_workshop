@@ -56,9 +56,7 @@ OpenLANE flow consists of several stages. By default, all flow steps are run in 
   
 #### 2.Floorplan and PDN
       Init_fp - Defines the core area for the macro as well as the rows (used for placement) and the tracks (used for routing)
-      
       Ioplacer - Places the macro input and output ports
-      
       PDN - Generates the power distribution network
       Tapcell - Inserts welltap and decap cells in the floorplan
       Placement – Placement is done in two steps, one with global placement in which we place the designs across the chip, but they will not be legal placement with some           standard cells overlapping each other, to fix this we perform a detailed placement which legalizes the design and ensures they fit in the standard cell rows
