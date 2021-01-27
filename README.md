@@ -20,6 +20,9 @@
  
 <img src="https://user-images.githubusercontent.com/64426746/105568308-4e7c2580-5d5e-11eb-8f70-2530339f5d31.png" alt="drawing" width="200"/>
 
+## PHYSICAL DESIGN FLOW
+
+![Screenshot (138)](https://user-images.githubusercontent.com/64426746/105970804-c4122980-60af-11eb-80cb-814871d500ed.png)
 
   
    
