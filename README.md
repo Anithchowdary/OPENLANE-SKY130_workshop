@@ -14,7 +14,8 @@
 ## WORKSHOP DAY 1
   Inception of open-source EDA, OpenLANE and Sky130 PDK
 ### 1.Introduction to RISC-V SOC
-    The chip is centered in the middle of the package,it consists of PADS & DIE.
+   chip is centered in the package.package and chip are connected by wires so that they can send the signals in and out.the packages has PADS:these pads are used to send signals in and out of the chip.the size of the package is given the size of the die.
+   
   * MACROS
   * FOUNDARY IP's
  
@@ -23,6 +24,8 @@
 ## PHYSICAL DESIGN FLOW
 
 ![Screenshot (138)](https://user-images.githubusercontent.com/64426746/105970804-c4122980-60af-11eb-80cb-814871d500ed.png)
+
+
 
   
    
