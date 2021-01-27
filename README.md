@@ -20,9 +20,6 @@
  
 <img src="https://user-images.githubusercontent.com/64426746/105568308-4e7c2580-5d5e-11eb-8f70-2530339f5d31.png" alt="drawing" width="200"/>
 
-| col 1      | col 2      |
-|------------|-------------|
-| <img src="https://user-images.githubusercontent.com/64426746/105568308-4e7c2580-5d5e-11eb-8f70-2530339f5d31.png" alt="drawing" width="200"/> | <img src="https://user-images.githubusercontent.com/64426746/105568308-4e7c2580-5d5e-11eb-8f70-2530339f5d31.png" alt="drawing" width="200"/> |
 
   
    
