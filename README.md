@@ -220,7 +220,7 @@ LAYOUT MAGIC
 <img src="https://user-images.githubusercontent.com/64426746/106028256-baa9b100-60f1-11eb-99d2-6b3bcd5f3174.png" alt="drawing" width="500"/>
 
 #### plotting the output vs time while sweeping the input:
-<img src="https://user-images.githubusercontent.com/64426746/106028428-ee84d680-60f1-11eb-98d3-10ec15b399e2.png" alt="drawing" width="500"/>
+<img src="https://user-images.githubusercontent.com/64426746/106028428-ee84d680-60f1-11eb-98d3-10ec15b399e2.png" alt="drawing" width="800"/>
 
 
 ## WORKSHOP DAY 4 Layout Timing Analysis and CTS
