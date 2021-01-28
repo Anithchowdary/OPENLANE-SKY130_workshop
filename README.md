@@ -42,7 +42,7 @@
 #### 5.ROUTING:
 implements the interconnect framework between standard cells utilizing the leftover accessible metal layers after CTS and PDN age. The steering is performed on directing matrices to guarantee negligible DRC mistakes.
                            
-<img src="https://user-images.githubusercontent.com/64426746/105970804-c4122980-60af-11eb-80cb-814871d500ed.png" alt="drawing" length="200/" width="200"/>
+<img src="https://user-images.githubusercontent.com/64426746/105970804-c4122980-60af-11eb-80cb-814871d500ed.png" alt="drawing" length="500/" width="500"/>
  
 ## INTRODUCTION OF OPENLANE
 
