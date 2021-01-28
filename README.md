@@ -41,7 +41,8 @@
 
 #### 5.ROUTING:
 implements the interconnect framework between standard cells utilizing the leftover accessible metal layers after CTS and PDN age. The steering is performed on directing matrices to guarantee negligible DRC mistakes.
-                              ![Screenshot (138)](https://user-images.githubusercontent.com/64426746/105970804-c4122980-60af-11eb-80cb-814871d500ed.png)
+                           
+                       <img src="https://user-images.githubusercontent.com/64426746/105970804-c4122980-60af-11eb-80cb-814871d500ed.png" alt="drawing" width="200"/>
 ## INTRODUCTION OF OPENLANE
 
 ##### Process Design Kit (PDK) is the interface between the CAD  and the foundry. The PDK is an assortment of records used to demonstrate a creation cycle for the EDA apparatuses utilized in planning an IC. PDK's are generally shut source and thus are the restricting element to open-source Digital ASIC Design. Google and Skywater have broken this disgrace and distributed the world's first open-source PDK on June 30th, 2020. This advancement has been an impetus for open-source EDA apparatuses. This workshop centers around utilizing the open-source RTL2GDS EDA apparatus, Open LANE, related to the Skywater 130nm PDK to play out the full RTL2GDS stream as demonstrated underneath:
