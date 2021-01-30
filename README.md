@@ -292,12 +292,12 @@ OpenLANE uses TritonRoute as the routing tool for implementation  of designs.Rou
        1.Re-run routing with higher QoR settings
        2.Manually fix DRC errors specific in tritonRoute.drc file
 ### SPEF Extraction
-After routing competion interconnect parasitics can be extracted to perform sign-off post-route STA analysis. The parasitics are extracted into a SPEF file.\
+After routing competion interconnect parasitics can be extracted to perform sign-off post-route STA analysis. The parasitics are extracted into a SPEF file.
 
 ### Acknowledgements
-Nickson Jose - VSD VLSI Engineer
-Kunal Ghosh - Co-founder (VSD Corp. Pvt. Ltd)
-Praharsha
+@ Nickson Jose - VSD VLSI Engineer
+@ Kunal Ghosh - Co-founder (VSD Corp. Pvt. Ltd)
+@ Praharsha
      
 
 
