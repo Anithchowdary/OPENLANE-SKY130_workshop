@@ -269,7 +269,7 @@ the timinig analysis is done by creating  .db database file. the database file i
 
 ![image](https://user-images.githubusercontent.com/64426746/106356718-afd86180-6327-11eb-801d-e6a059f93be9.png)
 
-## Day 5 Final Steps in RTL to GDSII
+## WORKSHOP Day 5 Final Steps in RTL to GDSII
 After generating our clock tree network and verifying post routing STA checks we are ready to generate the power distribution network in OpenLANE
 ![Screenshot (148)](https://user-images.githubusercontent.com/64426746/106356795-41e06a00-6328-11eb-9a1d-c76dde679148.png)
 
