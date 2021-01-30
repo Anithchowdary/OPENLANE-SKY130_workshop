@@ -255,17 +255,50 @@ In order to include the new cells in OpenLANE we need to do some initial configu
 ![Screenshot (102)](https://user-images.githubusercontent.com/64426746/106104173-144cc280-6168-11eb-9437-748bbb7e34ec.png)
 6.Check synthesis logs to ensure cell has been integrated correctly
 
-### Fixing Slack Violations
-vlsi engineers can get system specifications within the design style section. These specifications can confirm a needed frequency of operation. to research a circuit's temporal arrangement performance designers can use static temporal arrangement analysis tools (STA). once concerning pre clock tree synthesis STA analysis we have a tendency to square measure in the main involved with setup temporal arrangement with regard to a launch clock. STA can report issues like worst negative slack (WNS) and total negative slack (TNS). These confer with the worst path delay and total path delay with regard to our setup temporal arrangement restraint. Fixing slack violations will be debugged through performing arts STA analysis with OpenSTA, that is integrated within the OpenLANE tool. to explain these constraints to tools like so as to make sure correct operation of those tools 2 steps should be taken
-1.Design configuration files (.conf) - Tool configuration files for the specified design
-2.Design Synopsys design constraint (.sdc) files - Industry standard constraints file
-The slack is outside of this range we have to perform this things
-1.Review our synthesis strategy in OpenLANE
-2.Enable cell buffering
-3.Perform manual cell replacement on our WNS path with the OpenSTA tool
-4.Optimize the fanout value with OpenLANE tool
+### Clock Tree Synthesis
+by completing the floorplan and standard cell placement in OpenLANE.we insert the clock tree for sequential elements in our design.  main concerns regarding the generation of the clock tree are the two which are mentioned below :
+1.Clock skew - Difference in arrival times of the clock for sequential elements across the design
+2.Delta delay - Skew introduced through capacitive coupling of the clock tree nets
+run clock tree synthesis in OpenLANE:
+![Screenshot (144)](https://user-images.githubusercontent.com/64426746/106356168-89182c00-6323-11eb-9959-d37877eaad0b.png)
 
+### Post-CTS STA Analysis
+#### invoke OpenROAD from OpenLANE:
 
+the timinig analysis is done by creating  .db database file. the database file is created from the post-cts LEF and DEF files. To generate the .db files within OpenROAD:
+
+![image](https://user-images.githubusercontent.com/64426746/106356718-afd86180-6327-11eb-801d-e6a059f93be9.png)
+
+## Day 5 Final Steps in RTL to GDSII
+After generating our clock tree network and verifying post routing STA checks we are ready to generate the power distribution network in OpenLANE
+![Screenshot (148)](https://user-images.githubusercontent.com/64426746/106356795-41e06a00-6328-11eb-9a1d-c76dde679148.png)
+
+### The PDN feature within OpenLANE will create:
+     1.Power ring global to the entire core
+     2.Power halo local to any preplaced cells
+     3.Power straps to bring power into the center of the chip
+     4.Power rails for the standard cells
+![Screenshot (151)](https://user-images.githubusercontent.com/64426746/106356848-971c7b80-6328-11eb-8efc-bd956a11d614.png)
+
+### Routing
+##### Global and Detailed Routing
+
+OpenLANE uses TritonRoute as the routing tool for implementation  of designs.Routing consists of two stages thay are mentioned below
+
+1.Global Routing - Routing guide is generated for interconnects on our netlist defining what layers on the chip each of the nets will be reputed
+2.Detailed Routing - Metal traces are iteratively laid across the routing guides to physically implement the routing guides
+![Screenshot (153)](https://user-images.githubusercontent.com/64426746/106356943-1b6efe80-6329-11eb-8239-c5fea2f038e5.png)
+##### In case of DRC errors persist after routing the user has two options:
+       1.Re-run routing with higher QoR settings
+       2.Manually fix DRC errors specific in tritonRoute.drc file
+### SPEF Extraction
+After routing competion interconnect parasitics can be extracted to perform sign-off post-route STA analysis. The parasitics are extracted into a SPEF file.\
+
+### Acknowledgements
+Nickson Jose - VSD VLSI Engineer
+Kunal Ghosh - Co-founder (VSD Corp. Pvt. Ltd)
+Praharsha
+     
 
 
 
